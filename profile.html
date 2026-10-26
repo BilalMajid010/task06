@@ -1,107 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Profile Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#contact">contact</a>
-            <a href="#FAQ">FAQ</a>
-        </nav>
-    </header>
 
-    <h1>My Profile Page</h1>
-
-    <p id="introduction">Hi I am <strong>Bilal</strong> a <mark>Software Engineering graduate</mark> with a strong interest in web development. I have completed Front-End Development training at AshreiTech Academy NASTP Karachi where I
-        developed my skills in HTML CSS JavaScript and React.</p>
-
-    <img src="profile-pic.jpg" alt="profile photo of me">
-
-    <div id="about">
-        <h2>About Me</h2>
-        <p>I am a Software Engineering graduate passionate about building responsive user-friendly websites. My
-            technical skills include HTML CSS JavaScript React and Git/GitHub.</p>
-             
-        <p>I enjoy learning new technologies solving problems and turning ideas into practical web experiences. I am looking to grow as a developer by contributing to real-world projects and collaborating with experienced teams.</p>
+    <div class="profile-header" id="home">
+        <img src="profile-pic.jpg" alt="Profile picture" class="profile-image">
+        <h1>Bilal Majid</h1>
+        <p>Software Engineering Graduate | Web Developer</p>
+        <a href="#contact" class="profile-link">Contact Me</a>
     </div>
 
-    <div id="skilledu">
-        <h3>SKills</h3>
-        <ul class="list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>REACT</li>
+    <div class="container">
+
+        <h2>About Me</h2>
+        <p class="about">
+            I am a software engineering graduate interested in web development.
+            I enjoy building websites and improving my skills in HTML, CSS,
+            JavaScript, and React.
+        </p>
+
+        <h2>My Skills</h2>
+        <p class="skills-intro">Technologies and tools I work with:</p>
+        <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Git and GitHub</li>
         </ul>
 
-        <div>
-            <h3>Education</h3>
-            <ul>
-                <li>Matric - Szabist IMC</li>
-                <li>Pre Engineering - SAL College</li>
-                <li>B.E Software - MUET</li>
-            </ul>
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Bachelor of Software Engineering</h3>
+            <p>Mehran University of Engineering and Technology</p>
+            <p>Graduated in 2025</p>
         </div>
+
+        <h2>Projects</h2>
+        <ul class="project-list">
+            <li>MUET GPA Calculator</li>
+            <li>Personal Portfolio Website</li>
+            <li>Food Ordering Website</li>
+        </ul>
+
+        <h2>Useful Links</h2>
+        <p>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </p>
+
+        <h2 id="contact">Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <button type="reset" class="reset-button">Reset</button>
+        </form>
+
     </div>
 
-    <a href="#" >Linkedin</a>
-    <a href="#">Github</a>
-    <a href="#">Facebook</a>
-    <a href="#">Twitter</a>
+    <div class="footer">
+        <p>© 2026 Bilal Majid. All rights reserved.</p>
+        <a href="#home">Back to Top</a>
+    </div>
 
-    <hr>
-
-    <form>
-        <h2>Contact Form</h2>
-
-        <label>name</label>
-        <input type="text" value="Bilal" required>
-        <br><br>
-
-        <label>Email</label>
-        <input type="email" placeholder="yourname@gmail.com" required>
-        <br><br>
-
-        <label>password</label>
-        <input type="password" placeholder="password" required>
-        <br><br>
-
-        <label>date</label>
-        <input type="date">
-        <br><br>
-
-        <label>age</label>
-        <input type="number" min="18" max="30" step="2">
-        <br><br>
-
-        <p>Gender</p>
-        <input type="radio" name="gender">
-        <label>male</label>
-        <input type="radio" name="gender">
-        <label>female</label>
-        <br><br>
-
-        <p>Interest</p>
-        <input type="checkbox" name="interests">
-        <label>Sports</label>
-        <input type="checkbox" name="interests" disabled>
-        <label>Travelling</label>
-        <input type="checkbox" name="interests" checked>
-        <label>Learning Tech</label>
-        <br><br>
-
-        <label>Message</label>
-        <textarea type="text"></textarea>
-        <br><br>
-
-        <button id="resetbtn" type="reset">reset</button>
-        <button id="submitbtn" type="submit">submit</button>
-    </form>
 </body>
+
 </html>
